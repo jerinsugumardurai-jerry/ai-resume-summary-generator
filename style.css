@@ -245,7 +245,7 @@ footer {
 
 @media (max-width: 768px) {
 
-    /* ✅ FIXED NAVBAR - Horizontal in Mobile */
+    /* FORCE NAVBAR SINGLE LINE */
     .nav-container {
         flex-direction: row;
         justify-content: space-between;
@@ -254,13 +254,16 @@ footer {
     }
 
     .nav-right {
+        display: flex;
         flex-direction: row;
-        gap: 15px;
+        flex-wrap: nowrap;   /* 🔥 prevent wrapping */
+        gap: 10px;
     }
 
     .nav-right a {
-        margin-left: 15px;
-        font-size: 13px;
+        margin: 0;
+        font-size: 12px;     /* 🔥 reduce size so it fits */
+        white-space: nowrap; /* 🔥 prevent text break */
     }
 
     .hero {
@@ -333,3 +336,4 @@ html, body {
     }
 
 }
+
