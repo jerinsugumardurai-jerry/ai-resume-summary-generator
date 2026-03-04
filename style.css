@@ -50,7 +50,7 @@ ul {
 /* 🔥 FIX 1 - Remove side padding only for navbar */
 .navbar .container {
     padding-left: 8px;
-    padding-right: 8px;
+    padding-right: 6px;
 }
 
 .nav-container {
@@ -230,4 +230,5 @@ textarea {
 html, body {
     overflow-x: hidden;
 }
+
 
