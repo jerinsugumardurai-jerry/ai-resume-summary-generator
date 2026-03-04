@@ -358,63 +358,8 @@ html, body {
     .how-it-works-seo h2 {
         text-align: center;
     }
-/* ===== EXISTING CSS ===== */
-
-    .hero {
-        padding: 45px 20px 40px 20px;
-    }
-
-/* ===== PASTE NAVBAR FIX BELOW THIS ===== */
-
-     body {
-        margin: 0;
-    }
-
-     .navbar {
-       background: #000;
-       padding: 10px 8px;
-    }
-
-     .nav-inner {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-    }
-
-     .brand {
-       display: flex;
-       align-items: center;
-       margin: 0;
-       padding: 0;
-   }
-
-     .logo-img {
-        width: 18px;
-        height: 18px;
-        margin-right: 6px;
-   }
-
-    .logo-text {
-       font-size: 12px;
-       white-space: nowrap;
-       margin: 0;
-       padding: 0;
-   }
-
-    .nav-links {
-       list-style: none;
-       display: flex;
-       gap: 15px;
-       margin: 0;
-       padding: 0;
-  }
-
-     .nav-links li a {
-       text-decoration: none;
-       color: white;
-       font-size: 12px;
-   }
 }
    
+
 
 
