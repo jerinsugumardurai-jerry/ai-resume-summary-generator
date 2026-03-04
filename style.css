@@ -270,12 +270,15 @@ footer {
     .logo-text {
         font-size: 10px;
         white-space: nowrap;
-    .logo-img{
+    }
+   
+   .logo-img{
        width: 18px;
        height: 18px
        
     }
-    .hero {
+   
+   .hero {
         padding: 150px 20px 80px;
     }
 
@@ -345,6 +348,7 @@ html, body {
     }
 
 }
+
 
 
 
