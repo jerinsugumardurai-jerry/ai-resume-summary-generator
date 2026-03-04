@@ -245,19 +245,22 @@ footer {
 
 @media (max-width: 768px) {
 
+    /* ✅ FIXED NAVBAR - Horizontal in Mobile */
     .nav-container {
-        flex-direction: column;
-        gap: 12px;
-        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
     }
 
     .nav-right {
-        flex-direction: column;
-        gap: 8px;
+        flex-direction: row;
+        gap: 15px;
     }
 
     .nav-right a {
-        margin: 0;
+        margin-left: 15px;
+        font-size: 13px;
     }
 
     .hero {
@@ -296,6 +299,7 @@ footer {
         max-width: 320px;
     }
 }
+
 /* FIX CONTENT ALIGNMENT ISSUE */
 
 .seo-content,
@@ -329,4 +333,3 @@ html, body {
     }
 
 }
-
