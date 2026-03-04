@@ -47,12 +47,6 @@ ul {
     color: white;
 }
 
-/* 🔥 FIX 1 - Remove side padding only for navbar */
-.navbar .container {
-    padding-left: 8px;
-    padding-right: 6px;
-}
-
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -62,7 +56,7 @@ ul {
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 6px; /* little tighter */
+    gap: 10px;
 }
 
 .logo-img {
@@ -73,22 +67,19 @@ ul {
 .logo-text {
     font-size: 18px;
     font-weight: 600;
-    white-space: nowrap;
 }
 
 .nav-right {
     display: flex;
     align-items: center;
-    flex-wrap: nowrap; /* 🔥 prevent About Us going down */
 }
 
 .nav-right a {
     color: white;
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 20px;
     font-weight: 500;
     font-size: 14px;
-    white-space: nowrap; /* 🔥 prevent breaking */
 }
 
 /* ======================
@@ -173,46 +164,142 @@ textarea {
 }
 
 /* ======================
+   FEATURES
+====================== */
+
+.features {
+    text-align: center;
+    background: white;
+}
+
+.feature-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: #f9fbff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* ======================
+   PRICING
+====================== */
+
+.pricing {
+    text-align: center;
+    background: #f0f4ff;
+}
+
+.price-card {
+    background: white;
+    max-width: 500px;
+    margin: 40px auto 0;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1e3c72;
+}
+
+.price-card ul li {
+    margin: 12px 0;
+}
+
+/* ======================
+   ABOUT
+====================== */
+
+.about {
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* ======================
+   FOOTER
+====================== */
+
+footer {
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* ======================
    MOBILE RESPONSIVE
 ====================== */
 
 @media (max-width: 768px) {
 
+    /* FORCE NAVBAR SINGLE LINE */
     .nav-container {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        text-align: left;
     }
 
     .nav-right {
+        display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        gap: 8px;
+        flex-wrap: nowrap;   /* 🔥 prevent wrapping */
+        gap: 10px;
     }
 
     .nav-right a {
-        margin-left: 10px;
-        font-size: 11px; /* 🔥 slightly smaller */
+        margin-left: 15px;
+        font-size: 10px;
+        white-space: nowrap;
     }
 
+    /* 🔥 ADD THIS BELOW */
     .logo-text {
-        font-size: 12px; /* 🔥 smaller so About fits */
+        font-size: 10px;
+        white-space: nowrap;
+        margin: 0;
+        padding: 0;
+    }
+   
+   .logo-img{
+       width: 18px;
+       height: 18px
+       margin-right: 5px
     }
 
-    .logo-img {
-        width: 18px;
-        height: 18px;
-        margin-right: 4px;
-    }
-
-    .navbar {
-        padding: 10px 4px;
-    }
-
-    .hero {
+   body{
+        margin: 0;
+   }
+   .navbar {
+        padding: 10px 6px;
+   }
+   
+   .hero {
         padding: 45px 20px 40px 20px;
         margin: 0;
         min-height: auto;
+      
+    }
+
+    .hero h1 {
+        margin-top: 0;
+    }
+
+    .hero p {
+        font-size: 15px;
     }
 
     .search-box {
@@ -224,6 +311,32 @@ textarea {
     .search-box button {
         width: 100%;
     }
+
+    textarea {
+        height: 150px;
+    }
+
+    .feature-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+/* FIX CONTENT ALIGNMENT ISSUE */
+
+.seo-content,
+.faq,
+.how-it-works-seo,
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Prevent any horizontal scroll */
@@ -231,4 +344,19 @@ html, body {
     overflow-x: hidden;
 }
 
+/* Improve mobile readability */
+@media (max-width: 768px) {
 
+    .seo-content,
+    .faq,
+    .how-it-works-seo {
+        text-align: left;
+    }
+
+    .seo-content h2,
+    .faq h2,
+    .how-it-works-seo h2 {
+        text-align: center;
+    }
+
+}
