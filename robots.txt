@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yourdomain.com/sitemap.xml
+
+Sitemap: https://jerinsugumardurai-jerry.github.io/ai-resume-summary-generator/
