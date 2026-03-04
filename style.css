@@ -296,3 +296,37 @@ footer {
         max-width: 320px;
     }
 }
+/* FIX CONTENT ALIGNMENT ISSUE */
+
+.seo-content,
+.faq,
+.how-it-works-seo,
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Prevent any horizontal scroll */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Improve mobile readability */
+@media (max-width: 768px) {
+
+    .seo-content,
+    .faq,
+    .how-it-works-seo {
+        text-align: left;
+    }
+
+    .seo-content h2,
+    .faq h2,
+    .how-it-works-seo h2 {
+        text-align: center;
+    }
+
+}
+
