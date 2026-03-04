@@ -262,13 +262,13 @@ footer {
 
     .nav-right a {
         margin-left: 15px;
-        font-size: 12px;
+        font-size: 10px;
         white-space: nowrap;
     }
 
     /* 🔥 ADD THIS BELOW */
     .logo-text {
-        font-size: 14px;
+        font-size: 10px;
         white-space: nowrap;
     }
     .hero {
@@ -341,5 +341,6 @@ html, body {
     }
 
 }
+
 
 
