@@ -238,7 +238,16 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+footer a {
+    color: #ffffff;        /* bright white */
+    text-decoration: none;
+    font-weight: 500;
+}
 
+footer a:hover {
+    color: #ffdd57;        /* hover போது light yellow */
+    text-decoration: underline;
+}
 /* ======================
    MOBILE RESPONSIVE
 ====================== */
@@ -360,3 +369,4 @@ html, body {
     }
 
 }
+
